@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  server:
+    image: node:14
+    ports:
+      - "8080:8080"
+    command: ./server/server.sh
+    volumes:
+      - ./server:/server

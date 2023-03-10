@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  server:
+    image: node:12
+    ports:
+      - "8000:8000"
+    command: node server/server.js
+    volumes:
+      - ./server:/server
